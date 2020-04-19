@@ -52,11 +52,8 @@ def all_winter_holiday_supplies(holiday_hash)
 end
 
 def all_supplies_in_holidays(holiday_hash)
- holiday_hash.each do |season, holiday|
-   holiday.each do |holiday, supplies|
-     puts holiday, supplies
-     binding.pry
-   end
+  holiday_hash.each do |season, holiday|
+    puts holiday
  end
 end
 
