@@ -52,8 +52,11 @@ def all_winter_holiday_supplies(holiday_hash)
 end
 
 def all_supplies_in_holidays(holiday_hash)
-holiday_hash.keys.flatten
-holiday_hash.values.flatten
+ holiday_hash.each do |season, holiday|
+   holiday.each do |holiday, supplies|
+     return holiday, supplies
+   end
+ end
 end
 
 def all_holidays_with_bbq(holiday_hash)
