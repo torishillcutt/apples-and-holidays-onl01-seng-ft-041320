@@ -71,6 +71,6 @@ holiday_hash.each do |season, holiday|
   holiday.each |holiday, supply|
   if holiday.any?("BBQ")
     bbq_holidays << holiday
-
-
+  end
+  bbq_holidays
 end
